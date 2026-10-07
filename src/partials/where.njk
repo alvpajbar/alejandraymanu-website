@@ -1,0 +1,27 @@
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">{{ sections.where.title }}</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                {%- for venue in couple.venues %}
+                <div class="col-md-4" style="padding: 5px;">
+                    <a class="btn btn-fill btn-small" href="{{ venue.url }}"
+                        target="_blank"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;{{ venue.name }} - {{ venue.time }}</a>
+                    {%- if venue.note %}
+                    <p><em> {{ venue.note }}</em></p>
+                    {%- endif %}
+                    <img src="{{ venue.image }}" alt="{{ venue.alt }}"
+                        style="width:80%;display:block;margin:10px auto 0;">
+                </div>
+                {%- endfor %}
+            </div>
+            <!--<div class="image-container hidden-md hidden-lg">
+                <img src="img/iglesia-de-santa-ana.jpg" alt="Imagen 1">
+                <img src="img/hacienda-los-angeles 1.jpg" alt="Imagen 2">
+            </div>-->
+        </div>
+        <!--<img src="img/camino-autobuses.png" alt="Camino autobuses" style="width:100%;display:block;">-->
+    </section>

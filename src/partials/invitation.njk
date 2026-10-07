@@ -1,0 +1,44 @@
+    <section id="invitation" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3> ¡Nos casamos!</h3>
+                    <p>Os esperamos el día {{ couple.date.displayLong }} en {{ couple.date.city }} para celebrar con nosotros
+                        el día más importante de nuestra vida.</p>
+                    <!--<div class="share-bar"></div>-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div id="countdown-timer">
+                        <div class="count-box">
+                            <span id="days">0</span>
+                            <p>Días</p>
+                        </div>
+                        <div class="count-box">
+                            <span id="hours">0</span>
+                            <p>Horas</p>
+                        </div>
+                        <div class="count-box">
+                            <span id="minutes">0</span>
+                            <p>Minutos</p>
+                        </div>
+                        <div class="count-box">
+                            <span id="seconds">0</span>
+                            <p>Segundos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% if sections.rsvp.enabled %}
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 text-center"><a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">{{ sections.rsvp.nav }}</a></div>
+        <div class="col-sm-4"></div>
+    </div>
+    {% endif %}

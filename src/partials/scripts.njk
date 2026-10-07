@@ -1,0 +1,111 @@
+    <script>
+        window.WEDDING_CONFIG = {
+            rsvpEndpoint: {{ couple.rsvpEndpoint | dump | safe }},
+            calendar: {
+                title: {{ ("Boda de " + couple.names) | dump | safe }},
+                start: {{ couple.date.calendarStart | dump | safe }},
+                end: {{ couple.date.calendarEnd | dump | safe }},
+                address: {{ couple.calendar.address | dump | safe }},
+                description: {{ couple.calendar.description | dump | safe }}
+            }
+        };
+    </script>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            loop: true,
+            autoHeight: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
+    <!-- Script -->
+    <script>
+        function copiarIBAN() {
+            const texto = document.getElementById("iban").innerText;
+
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(texto)
+                    .then(() => mostrarToast())
+                    .catch(err => alert("Error al copiar el IBAN: " + err));
+            } else {
+                const input = document.createElement("input");
+                input.value = texto;
+                document.body.appendChild(input);
+                input.select();
+                document.execCommand("copy");
+                document.body.removeChild(input);
+                mostrarToast();
+            }
+        }
+        function mostrarToast() {
+            const toast = document.getElementById("toast");
+            toast.style.visibility = "visible";
+            toast.style.opacity = "1";
+
+            setTimeout(() => {
+                toast.style.opacity = "0";
+                setTimeout(() => {
+                    toast.style.visibility = "hidden";
+                }, 500);
+            }, 2000); // El toast desaparece después de 2 segundos
+        }
+    </script>
+
+    <script>
+        function openEnvelope() {
+            const envelope = document.querySelector(".envelope");
+            envelope.classList.add("open");
+            setTimeout(() => {
+                const intro = document.getElementById("wedding-intro");
+                intro.style.transition = "opacity 1.2s";
+                intro.style.opacity = "0";
+                document.body.classList.remove("lock-scroll");
+                setTimeout(() => {
+                    intro.style.display = "none";
+                }, 1200);
+            }, 1500);
+        }
+    </script>
+
+    <script>
+
+        const weddingDate = new Date("{{ couple.date.js }}").getTime();
+
+        const countdown = setInterval(function () {
+
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+        }, 1000);
+
+    </script>

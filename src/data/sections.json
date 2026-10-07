@@ -1,0 +1,25 @@
+{
+  "envelope": { "enabled": true },
+  "where":    { "enabled": true, "title": "¿Dónde?",              "nav": "¿Dónde?" },
+  "gallery":  { "enabled": true, "title": "A & M",                "nav": "A & M" },
+  "cadiz":    { "enabled": true, "title": "¿Qué hacer en Cádiz?", "nav": "Cádiz" },
+  "hotels":   { "enabled": false, "title": "Hoteles",              "nav": "Hoteles" },
+  "gifts":    { "enabled": true, "title": "Regalos",              "nav": "Regalos" },
+  "rsvp": {
+    "enabled": true,
+    "title": "Confirma asistencia",
+    "nav": "Confirma asistencia",
+    "subtitle": "Agradeceríamos vuestra respuesta lo antes posible",
+    "buttonLabel": "Continuar",
+    "note": "",
+    "modalTitle": "¡Muchas gracias!",
+    "modalText": "Te esperamos en nuestra boda.",
+    "fields": {
+      "attendance": true,
+      "bus": false,
+      "intolerances": true,
+      "comments": true,
+      "companion": true
+    }
+  }
+}

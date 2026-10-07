@@ -1,0 +1,26 @@
+    <section id="regalos">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="header">{{ sections.gifts.title }}</h3>
+                    <p> {{ couple.gifts.message }} </p>
+                    <p> IBAN:
+                        <span id="iban">{{ couple.gifts.iban }}</span>
+                        <button onclick="copiarIBAN()"
+                            style="padding: 8px 12px; border: none; background-color: white; color: white; border-radius: 5px; cursor: pointer;">
+                            📋</button>
+
+                        <!-- Toast -->
+                    <div id="toast" style="visibility: hidden; min-width: 200px;background-color: #333;color: #fff;text-align: center;
+                    border-radius: 5px;padding: 12px;position: fixed;z-index: 1;bottom: 30px;left: 50%;transform: translateX(-50%);font-size: 14px;
+                    opacity: 0;transition: opacity 0.5s ease-in-out;">
+                        {{ couple.gifts.copiedToast }}
+                    </div>
+                    </p>
+                    <img src="{{ couple.gifts.image }}" alt="{{ couple.gifts.imageAlt }}" style="width:100%;max-width:600px;margin:10px 0;">
+                </div>
+            </div>
+
+        </div>
+
+    </section>

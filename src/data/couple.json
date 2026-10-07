@@ -1,0 +1,42 @@
+{
+  "names": "Alejandra y Manuel",
+  "name1": "Alejandra",
+  "name2": "Manuel",
+  "domain": "alejandraymanuel.com",
+  "rsvpEndpoint": "https://script.google.com/macros/s/AKfycbxadgjB4CGUP30Z-Yu8FRnmw4xWqTCNQMqMs2aWgssl_ig6nkyvgtw9chMUDIUUgKo/exec",
+  "gifts": {
+    "message": "¡Vuestra presencia es nuestro mayor regalo! Si además queréis ayudarnos a comenzar esta nueva etapa con una aventura inolvidable en Grecia, podéis hacerlo aquí:",
+    "iban": "ESXXXXXXX",
+    "image": "img/santorini.jpg",
+    "imageAlt": "Japón",
+    "copiedToast": "IBAN copiado al portapapeles ✅"
+  },
+  "date": {
+    "display": "10 abril 2027",
+    "displayLong": "10 de abril de 2027",
+    "city": "El Puerto de Santa María",
+    "js": "Apr 10, 2027 12:30:00",
+    "calendarStart": "Apr 10, 2027 12:30",
+    "calendarEnd": "Apr 11, 2027 00:00"
+  },
+  "calendar": {
+    "address": "Iglesia Mayor Prioral",
+    "description": "¡Os esperamos en nuestra boda!"
+  },
+  "venues": [
+    {
+      "name": "Iglesia Mayor Prioral",
+      "time": "12:30",
+      "url": "https://maps.app.goo.gl/AxJrLifkFAyUKW257",
+      "image": "img/iglesia-la-prioral.JPG",
+      "alt": "Iglesia Mayor Prioral"
+    },
+    {
+      "name": "Castillo de San Marcos",
+      "time": "14:00",
+      "url": "https://maps.app.goo.gl/AUjDZEaLqs6CzaxGA",
+      "image": "img/castillo-san-marcos.JPG",
+      "alt": "Castillo de San Marcos"
+    }
+  ]
+}

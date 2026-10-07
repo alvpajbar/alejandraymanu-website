@@ -1,0 +1,26 @@
+    <section id="hotels">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="header">{{ sections.hotels.title }}</h3>
+                    <img src="img/hoteles.png" alt="Hoteles" style="width:100%;display:block;">
+                </div>
+
+            </div>
+            <div class="row">
+                {%- for hotel in hotels %}
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="{{ hotel.wp }}">
+                        <h5><a href="{{ hotel.url }}" target="_blank">{{ hotel.name }}</a></h5>
+                        {%- for note in hotel.notes %}
+                        <p>
+                            <li>{{ note }}</li>
+                        </p>
+                        {%- endfor %}
+                    </div>
+                </div>
+                {%- endfor %}
+            </div>
+        </div>
+
+    </section>

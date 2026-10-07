@@ -1,0 +1,39 @@
+    <section id="cadiz">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3 class="header">{{ sections.cadiz.title }}</h3>
+                </div>
+            </div>
+            <div class="row section-padding">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;{{ cadiz.buttonLabel }}
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <h3 class="text-center section-padding">{{ cadiz.modalTitle }}</h3>
+                        <p>{{ cadiz.intro }}</p>
+                        {%- for zone in cadiz.zones %}
+                        <h3>{{ zone.title }}{% if zone.time %} <span class="time">{{ zone.time }}</span>{% endif %}</h3>
+                        <img src="{{ zone.image }}" alt="{{ zone.imageAlt }}"
+                            style="width:100%;max-width:600px;margin:10px 0;">
+                        {%- for block in zone.blocks %}
+                        <p><strong>{{ block.title }}</strong> <br> {{ block.html | safe }}</p>
+                        {%- endfor %}
+                        {%- endfor %}
+                        <p>{{ cadiz.outro }}</p>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </section>

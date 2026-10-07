@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+{% include "partials/head.njk" %}
+
+<body id="top" class="lock-scroll">
+{% if sections.envelope.enabled %}{% include "partials/envelope.njk" %}{% endif %}
+{% include "partials/hero.njk" %}
+{% include "partials/invitation.njk" %}
+
+{% if sections.where.enabled %}{% include "partials/where.njk" %}{% endif %}
+{% if sections.gallery.enabled %}{% include "partials/gallery.njk" %}{% endif %}
+{% if sections.cadiz.enabled %}{% include "partials/cadiz.njk" %}{% endif %}
+{% if sections.hotels.enabled %}{% include "partials/hotels.njk" %}{% endif %}
+{% if sections.gifts.enabled %}{% include "partials/gifts.njk" %}{% endif %}
+{% if sections.rsvp.enabled %}{% include "partials/rsvp.njk" %}{% endif %}
+{% include "partials/footer.njk" %}
+{% include "partials/scripts.njk" %}
+</body>
+
+</html>

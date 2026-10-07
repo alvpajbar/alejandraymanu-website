@@ -1,0 +1,139 @@
+    <section class="rsvp text-center" id="rsvp">
+
+        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <div class="section-padding">
+                            <h3>{{ sections.rsvp.modalTitle }}</h3>
+                            <p>{{ sections.rsvp.modalText }}</p>
+                            <div id="add-to-cal"></div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h3>{{ sections.rsvp.title }}</h3>
+                    <p>{{ sections.rsvp.subtitle }}</p>
+                    <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-user"></i><input name="name" class="" placeholder="Nombre" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-user"></i><input name="surname" class="" placeholder="Apellidos"
+                                        required>
+                                </div>
+                            </div>
+                            {% if sections.rsvp.fields.attendance %}
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-check"></i><input name="attendance" class=""
+                                        placeholder="¿Asistirás? (Sí/No)" required>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if sections.rsvp.fields.bus %}
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-bus"></i><input name="bus" class="" placeholder="Autobús (Sí/No)"
+                                        required>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if sections.rsvp.fields.intolerances %}
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-lock"></i><input name="intolerances" class=""
+                                        placeholder="Restricciones alimentarias">
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if sections.rsvp.fields.comments %}
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-comment"></i><input name="comments" class=""
+                                        placeholder="Comentarios">
+                                </div>
+                            </div>
+                            {% endif %}
+                        </div>
+                        {% if sections.rsvp.fields.companion %}
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div style="display: flex; align-items: center; margin-top: 15px;">
+                                    <label class="toggle-container">
+                                        Añadir acompañante
+                                        <input type="checkbox" id="companion-toggle">
+                                        <span class="slider-toggle"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" id="companion-form" style="display: none; margin-top: 15px;">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-user"></i><input name="companion-name" id="companion_name" class=""
+                                        placeholder="Nombre del acompañante">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-user"></i><input name="companion-surname" id="companion_surname"
+                                        class="" placeholder="Apellidos del acompañante">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="form-input-group">
+                                    <i class="fa fa-lock"></i><input name="companion-intolerances" class=""
+                                        placeholder="Restricciones alimentarias">
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if sections.rsvp.note %}
+                        <div class="row">
+                            <p><em> {{ sections.rsvp.note }}</em>
+                            </p>
+                        </div>
+                        {% endif %}
+                        <div class="row">
+                            <div class="col-md-12" id="alert-wrapper"></div>
+                        </div>
+                        <button class="btn-fill rsvp-btn">
+                            {{ sections.rsvp.buttonLabel }}
+                        </button>
+                    </form>
+
+                    {% if sections.rsvp.fields.companion %}
+                    <script>
+                        document.getElementById('companion-toggle').addEventListener('change', function () {
+                            const companionForm = document.getElementById('companion-form');
+                            const companionName = document.getElementById('companion_name');
+                            const companionSurname = document.getElementById('companion_surname');
+
+                            if (this.checked) {
+                                companionForm.style.display = 'block';
+                                companionName.setAttribute('required', 'required');
+                                companionSurname.setAttribute('required', 'required');
+                            } else {
+                                companionForm.style.display = 'none';
+                                companionName.removeAttribute('required');
+                                companionSurname.removeAttribute('required');
+                            }
+                        });
+                    </script>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>

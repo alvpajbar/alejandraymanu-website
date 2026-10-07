@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Hotel Eurostars Guadalquivir ****",
+    "url": "https://www.eurostarshotels.com/",
+    "wp": "wp3",
+    "notes": [
+      "Código descuento: BODAJFG",
+      "15% descuento en web",
+      "Hasta 20 habitaciones",
+      "Precio variable",
+      "Código válido hasta 30 días antes",
+      "Cancelación gratis hasta 14 días antes"
+    ]
+  },
+  {
+    "name": "Hotel Ribera de Triana ****",
+    "url": "https://hotelriberadetriana.com/",
+    "wp": "wp5",
+    "notes": [
+      "Código descuento: BODAMARINAYJAVI",
+      "10% descuento",
+      "Reservable hasta 9 octubre o fin de disponibilidad",
+      "Precio variable",
+      "Suelen exigir mínimo 2 noches"
+    ]
+  },
+  {
+    "name": "Hotel Monte Triana ****",
+    "url": "https://www.hotel-montetriana.com/ofertas",
+    "wp": "wp4",
+    "notes": [
+      "Sin código",
+      "Reserva directamente en su web, donde suben sus ofertas (hasta ~15% descuento)",
+      "Cada uno reserva con el mejor precio disponible en ese momento",
+      "Contacto: hmtreservas@hotelesmonte.com"
+    ]
+  },
+  {
+    "name": "Hotel Zenit Sevilla ****",
+    "url": "https://sevilla.zenithoteles.com/es/",
+    "wp": "wp6",
+    "notes": [
+      "Precio fijo grupo boda",
+      "166€ / noche habitación doble",
+      "Hasta 15 habitaciones ",
+      "Reserva por teléfono o email. Contacto: eventossevilla@zenithoteles.com"
+    ]
+  }
+]

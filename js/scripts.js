@@ -87,17 +87,19 @@ $(document).ready(function () {
 
     /***************** Add to Calendar ******************/
 
+    var config = window.WEDDING_CONFIG;
+
     var myCalendar = createCalendar({
         options: {
             class: '',
             id: ''
         },
         data: {
-            title: "Boda de Marina y Javi",
-            start: new Date('Oct 17, 2026 11:30'),
-            end: new Date('Oct 18, 2026 00:00'),
-            address: 'Real Parroquia de Santa Ana (Triana)',
-            description: "¡Os esperamos en nuestra boda!"
+            title: config.calendar.title,
+            start: new Date(config.calendar.start),
+            end: new Date(config.calendar.end),
+            address: config.calendar.address,
+            description: config.calendar.description
         }
     });
 
@@ -110,20 +112,23 @@ $(document).ready(function () {
         var data = $(this).serialize();
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>¡Un momento!</strong> Estamos guardando tu información.'));
-        $.post('https://script.google.com/macros/s/AKfycbzSfgDo4oTAlleD9gbBSphZ51f2If0amTvUwdMJMj2QqDEJo9W_DdB1B66DIFCqIlk_/exec', data)
-            .done(function (data) {
-                console.log(data);
-                if (data.result === "error") {
-                    $('#alert-wrapper').html(alert_markup('danger', data.message));
-                } else {
-                    $('#alert-wrapper').html('');
-                    $('#rsvp-modal').modal('show');
-                }
-            })
-            .fail(function (data) {
-                console.log(data);
-                $('#alert-wrapper').html(alert_markup('danger', '<strong>¡Lo sentimos!</strong> Hay algún problema con el servidor. '));
-            });
+
+        // fetch con no-cors porque Apps Script responde con 302 a googleusercontent.com
+        // y el navegador bloquea leer la respuesta. El POST sí llega al servidor.
+        fetch(config.rsvpEndpoint, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: data
+        })
+        .then(function () {
+            $('#alert-wrapper').html('');
+            $('#rsvp-modal').modal('show');
+        })
+        .catch(function (err) {
+            console.log(err);
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>¡Lo sentimos!</strong> Hay algún problema con el servidor. '));
+        });
     });
 
 });

@@ -1,0 +1,135 @@
+{
+  "buttonLabel": "Conoce Cádiz y provincia",
+  "modalTitle": "GUÍA DE CÁDIZ",
+  "intro": "El Puerto de Santa María y Cádiz son rincones mágicos llenos de historia, playas increíbles, comida espectacular y un ambiente que os va a enamorar. Para que disfrutéis al máximo, hemos preparado esta guía con los mejores planes y sitios. ¡Vamos a vivir Cádiz como se merece!",
+  "outro": "¡Esperamos que lo paséis genial y que esta guía os ayude a exprimir cada rincón! Si necesitáis algo, no dudéis en preguntar. ¡Nos vemos en la celebración!",
+  "zones": [
+    {
+      "title": "El Puerto de Santa María",
+      "image": "img/conoce-cadiz/el-puerto-de-santa-maria.jpg",
+      "imageAlt": "El Puerto de Santa María",
+      "blocks": [
+        {
+          "title": "Pasear por el casco antiguo",
+          "html": "Descubre el <a href='https://castillodesanmarcos.com/' target='_blank'>Castillo de San Marcos</a>, un rincón lleno de historia, o la <a href='https://maps.app.goo.gl/PwZUA6eXSiKjvpZJ7' target='_blank'>Iglesia Mayor Prioral</a>. Si te apetece algo diferente, visita las <a href='https://www.osborne.es/es/experiencia-bodega-osborne-cadiz' target='_blank'>Bodegas Osborne</a> para una experiencia única con vino y tradición."
+        },
+        {
+          "title": "Dónde comer",
+          "html": "Si algo no falta en El Puerto de Santa María, son buenos sitios para comer. Aquí van nuestras recomendaciones:<br><a href='https://maps.app.goo.gl/sQdEPHPDV5MfftJh8' target='_blank'>La Pescadería</a>: Un restaurante moderno, perfecto para disfrutar de pescado fresco y un ambiente relajado.<br><a href='https://maps.app.goo.gl/jN1DA6ovRNhY4kze8' target='_blank'>Toro Tapas</a>: Tapas creativas con guiños al toro de Osborne.<br><a href='https://maps.app.goo.gl/26KCfFARVTH3K7fN8' target='_blank'>La Taberna del Chef del Mar</a>: Una versión más informal pero espectacular del chef de Aponiente.<br><a href='https://maps.app.goo.gl/kMpZ3nKvY4ePLio39' target='_blank'>El Faro del Puerto</a>: Cocina andaluza tradicional con toques modernos en un ambiente elegante.<br><a href='https://maps.app.goo.gl/mgM7WyBw6VCc2DsC9' target='_blank'>Bar Er Beti</a>: El bar de tapeo por excelencia de El Puerto de Santa María.<br><a href='https://maps.app.goo.gl/n2yW1FptjgfyY1ft7' target='_blank'>El Apolo</a>: Un clásico para mariscos y pescados frescos.<br><a href='https://maps.app.goo.gl/9hCKovSJdwEWy4vj6' target='_blank'>Casa Pepe (Puerto Sherry)</a>: Perfecto para una comida tranquila con vistas espectaculares a la bahía de Cádiz.<br><a href='https://maps.app.goo.gl/R4NgCBiqA4ummoME8' target='_blank'>Romerijo</a>: El sitio más típico de El Puerto para disfrutar de marisco y pescaíto frito.<br><a href='https://maps.app.goo.gl/gvycJRKm9Gba8QAD8' target='_blank'>Mendoza (Valdelagrana)</a>: Un lugar más informal, ideal para tapear con vistas al mar."
+        },
+        {
+          "title": "Playas",
+          "html": "Relájate en la <a href='https://maps.app.goo.gl/eWYoj9eKjoJJzZoeA' target='_blank'>Playa de Valdelagrana</a>, perfecta para paseos tranquilos, o disfruta de los atardeceres en la <a href='https://maps.app.goo.gl/dmS9SnJ8kqf93SAB9' target='_blank'>Playa de Las Redes</a>."
+        }
+      ]
+    },
+    {
+      "title": "Cádiz Capital",
+      "time": "15 min en coche o 30 en catamarán",
+      "image": "img/conoce-cadiz/catedral-cadiz-historia-tercer-centenario.jpg",
+      "imageAlt": "Catedral de Cádiz",
+      "blocks": [
+        {
+          "title": "Qué ver",
+          "html": "Sumérgete en la historia visitando la <a href='https://www.catedraldecadiz.com/' target='_blank'>Catedral de Cádiz</a> y sube a la torre para unas vistas espectaculares. Pasea por el <a href='https://turismo.cadiz.es/es/rutas-y-visitas-en-cadiz/gran-teatro-falla' target='_blank'>Teatro Falla</a>, icono del Carnaval, o vive el bullicio en el <a href='https://mercadocentralcadiz.com/' target='_blank'>Mercado Central de Abastos</a>. Si te apetece playa, la <a href='https://www.cadizturismo.com/playas/la-caleta' target='_blank'>Playa de La Caleta</a> es ideal."
+        },
+        {
+          "title": "Dónde comer",
+          "html": "Disfruta de chacinas y quesos en el mítico <a href='https://maps.app.goo.gl/M5pxV95RQ8yv5LsC7' target='_blank'>Casa Manteca</a>, prueba las recetas modernas de atún en <a href='https://maps.app.goo.gl/YzWZfx93rF6kLaY57' target='_blank'>La Marmita</a>, o saborea el pescado frito en <a href='https://maps.app.goo.gl/dmxKciecdEtSooU18' target='_blank'>El Faro de Cádiz</a>."
+        }
+      ]
+    },
+    {
+      "title": "Jerez de la Frontera",
+      "time": "20 min en coche",
+      "image": "img/conoce-cadiz/bodegas-jerez.png",
+      "imageAlt": "Bodegas en Jerez",
+      "blocks": [
+        {
+          "title": "Imprescindibles",
+          "html": "Visita una de las famosas bodegas para conocer el vino de Jerez, o maravíllate con los caballos en la <a href='https://www.realescuela.org/' target='_blank'>Real Escuela Andaluza del Arte Ecuestre</a>."
+        },
+        {
+          "title": "Dónde comer",
+          "html": "Tapas clásicas y modernas te esperan en <a href='https://maps.app.goo.gl/aRQa3ajRwUmXL3rj8' target='_blank'>Albores</a>, mientras que <a href='https://maps.app.goo.gl/3TkwbLJr8YLMg73j6' target='_blank'>La Carboná</a> combina cocina tradicional con un ambiente único en una antigua bodega. Para algo más informal, prueba el <a href='https://maps.app.goo.gl/3LcnVZ2xj1WCZ2cp8' target='_blank'>Bar Juanito</a>, famoso por sus alcachofas, o ve a uno de sus <a href='https://www.turismojerez.com/que-hacer/enoturismo/ruta-de-los-tabancos' target='_blank'>tabancos</a>, como el <a href='https://maps.app.goo.gl/WAKbS6nszxqV8cP46' target='_blank'>tabanco Plateros</a>."
+        }
+      ]
+    },
+    {
+      "title": "Vejer de la Frontera",
+      "time": "50 min en coche",
+      "image": "img/conoce-cadiz/vejer.png",
+      "imageAlt": "Plaza de España en Vejer",
+      "blocks": [
+        {
+          "title": "Qué ver",
+          "html": "Recorre las callejuelas blancas del casco antiguo y disfruta de las vistas al atardecer desde los miradores. Un pueblo con mucho encanto."
+        },
+        {
+          "title": "Dónde comer",
+          "html": "Descubre la mezcla de sabores árabe-andaluces en <a href='https://maps.app.goo.gl/QX7G8CbsRSyuHUuw8' target='_blank'>El Jardín del Califa</a> o disfruta de unas de las mejores carnes de la provincia en <a href='https://maps.app.goo.gl/yUnL68gVHL1dpzEJ8' target='_blank'>Restaurante La Castillería</a>."
+        }
+      ]
+    },
+    {
+      "title": "Conil de la Frontera",
+      "time": "50 min en coche",
+      "image": "img/conoce-cadiz/Conil.png",
+      "imageAlt": "Playa de Los Bateles",
+      "blocks": [
+        {
+          "title": "Playas",
+          "html": "Desde la <a href='https://maps.app.goo.gl/jS5BYCoUvuE4odMs5' target='_blank'>Playa de Los Bateles</a> hasta Roche, Conil tiene algunas de las mejores playas para relajarse y disfrutar."
+        },
+        {
+          "title": "Dónde comer",
+          "html": "Disfruta de un arroz junto al mar en <a href='https://maps.app.goo.gl/RJSqmr7tBnNxfAGa7' target='_blank'>La Fontanilla</a>, relájate con un vinito y vistas alucinantes en <a href='https://maps.app.goo.gl/wrGUEWvWjxC8vDaz9' target='_blank'>El Roqueo</a> o prueba la cocina moderna en <a href='https://maps.app.goo.gl/VEdFztrJziy9LqN56' target='_blank'>El Escondite de Conil</a>."
+        }
+      ]
+    },
+    {
+      "title": "Playas y Naturaleza",
+      "time": "Entre 50 min y 1 hora",
+      "image": "img/conoce-cadiz/playa-bolonia.jpg",
+      "imageAlt": "Playa de Bolonia",
+      "blocks": [
+        {
+          "title": "Bolonia",
+          "html": "Una playa virgen que combina aguas cristalinas con historia. No te pierdas las <a href='https://es.wikipedia.org/wiki/Baelo_Claudia' target='_blank'>ruinas de Baelo Claudia</a>."
+        },
+        {
+          "title": "Barbate y La Breña",
+          "html": "Descubre el <a href='https://www.andalucia.org/es/espacios-naturales-la-brena-y-marismas-de-barbate' target='_blank'>Parque Natural de La Breña</a> o desconecta en la <a href='https://maps.app.goo.gl/1seYniQb43985iRy8' target='_blank'>Playa de los Alemanes</a>, un rincón espectacular."
+        },
+        {
+          "title": "Dónde comer",
+          "html": "Disfruta del mejor atún de la provincia en el restaurante <a href='https://maps.app.goo.gl/xdC1Fg82VL4EKaHq6' target='_blank'>El Campero</a> o en <a href='https://maps.app.goo.gl/hDe2nrMshVEQiif69' target='_blank'>La Peña El Atún</a>."
+        }
+      ]
+    },
+    {
+      "title": "Pueblos Blancos de la Sierra de Cádiz",
+      "time": "40 min - 1 hora en coche",
+      "image": "img/conoce-cadiz/arcos-de-la-frontera.jpg",
+      "imageAlt": "Arcos de la Frontera",
+      "blocks": [
+        {
+          "title": "Arcos de la Frontera",
+          "html": "Uno de los pueblos más bonitos de la provincia. Pasea por sus calles empedradas, visita sus iglesias y disfruta de las vistas desde los miradores. Es perfecto para perderse y hacer fotos espectaculares."
+        },
+        {
+          "title": "Zahara de la Sierra",
+          "html": "Este pueblo de cuento destaca por su castillo y sus vistas al embalse. Zahara es un lugar tranquilo para desconectar y disfrutar de la naturaleza."
+        },
+        {
+          "title": "Grazalema",
+          "html": "Rodeado por el Parque Natural de la Sierra de Grazalema, este pueblo es perfecto para los amantes de la naturaleza. Disfruta de senderos, montañas y del ambiente acogedor de sus calles."
+        },
+        {
+          "title": "Olvera",
+          "html": "Con su imponente castillo y la iglesia de Nuestra Señora de la Encarnación, Olvera es otro pueblo imprescindible de la sierra. También es conocido por su tramo de la Vía Verde de la Sierra, ideal para caminatas o paseos en bicicleta."
+        }
+      ]
+    }
+  ]
+}

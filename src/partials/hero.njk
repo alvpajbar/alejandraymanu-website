@@ -1,0 +1,38 @@
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                {% if sections.where.enabled %}<li><a href="#intro">{{ sections.where.nav }}</a></li>{% endif %}
+                                {% if sections.gallery.enabled %}<li><a href="#eng-pics">{{ sections.gallery.nav }}</a></li>{% endif %}
+                                {% if sections.cadiz.enabled %}<li><a href="#cadiz">{{ sections.cadiz.nav }}</a></li>{% endif %}
+                                {% if sections.hotels.enabled %}<li><a href="#hotels">{{ sections.hotels.nav }}</a></li>{% endif %}
+                                {% if sections.gifts.enabled %}<li><a href="#regalos">{{ sections.gifts.nav }}</a></li>{% endif %}
+                            </ul>
+                            {% if sections.rsvp.enabled %}
+                            <ul class="member-actions">
+                                <br><a href="#rsvp" class="btn-white btn-small">{{ sections.rsvp.nav }}</a>
+                            </ul>
+                            {% endif %}
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <img src="img/logo-lg.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down-arrow floating-arrow"><a href="#invitation"><i class="fa fa-angle-down"></i></a></div>
+    </section>

@@ -11,10 +11,10 @@ $txt-accent: #ACB1B4;
 $form-placeholder: #BCC1C3;
 // form placeholder text
 // Global colours
-$accent-color: #e8ca6f;
-// global accent colour
-$accent-color-hover: #d3b56a;
-// global accent colour hover
+$accent-color: var(--accent);
+// global accent colour (defined per-couple in src/data/theme.json)
+$accent-color-hover: var(--accent-hover);
+// global accent colour hover (defined per-couple in src/data/theme.json)
 $white-color: #fff;
 $black-color: #000;
 // Typography colours
